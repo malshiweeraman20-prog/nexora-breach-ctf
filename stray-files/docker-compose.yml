@@ -1,0 +1,25 @@
+services:
+ stage01-recon:
+ build: .
+ container_name: nexora-stage01
+ restart: unless-stopped
+ ports:
+ - 127.0.0.1:8101:80
+ networks:
+ - stage01-net
+ read_only: true
+ tmpfs:
+ - /var/cache/nginx
+ - /var/run
+ - /tmp
+ cap_drop:
+ - ALL
+ cap_add:
+ - CHOWN
+ - SETUID
+ - SETGID
+
+networks:
+ stage01-net:
+ driver: bridge
+ internal: false

@@ -1,0 +1,7 @@
+NEXORA Security Team,
+
+We intercepted this encoded message. It looks like it's been encoded 
+twice using different schemes. Decode carefully.
+
+546b565954314a4265324e794e474e725833526f4d31396a4d47517a66513d3d
+

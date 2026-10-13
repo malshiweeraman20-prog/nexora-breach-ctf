@@ -1,0 +1,11 @@
+Case File: NEXORA-2026-0912
+
+The customer portal exploit (Stage 4) was traced back to an external 
+source that later pivoted to an internal panel. Correlate the timestamps 
+and IP addresses in access.log to identify:
+
+1. The IP address that successfully exploited the broken access control
+2. The IP address used for internal lateral movement
+3. Any endpoint that suggests credential/key exposure
+
+Flag format: NEXORA{...}
