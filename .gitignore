@@ -3,5 +3,3 @@ ctfd/.data/
 *.log
 __pycache__/
 *.pyc
-docs/ctfd-credentials.txt
-docs/ctfd-credentiay
